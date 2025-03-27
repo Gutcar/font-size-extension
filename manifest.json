@@ -3,6 +3,9 @@
     "manifest_version": 3,
     "description": "A simple yet functional chrome extension that applies a multiplier to all font-size related classes across the page.",
     "version": "1.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
     "icons": {
         "16": "images/icon-16.png",
         "32": "images/icon-32.png",
@@ -20,8 +23,5 @@
     "permissions": [
         "activeTab",
         "scripting"
-    ],
-    "action": {
-        "default_popup": "popup.html"
-    }
+    ]
 }
