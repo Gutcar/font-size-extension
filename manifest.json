@@ -1,1 +1,27 @@
-
+{
+    "name": "Font Size Adjuster",
+    "manifest_version": 3,
+    "description": "A simple yet functional chrome extension that applies a multiplier to all font-size related classes across the page.",
+    "version": "1.0",
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "content_scripts": [
+            {
+                "js": [
+                    "scripts/content.js"
+                ],
+                "matches": ["https://*/"]
+            }
+        ],
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
